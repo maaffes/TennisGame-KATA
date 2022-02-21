@@ -29,7 +29,10 @@ public class TennisGame {
 					if (player1 == player2) {
 						player1 += 1;
 					} else {
-						score = "player1:40+AD player2:" + player2;
+					  if(player2>40){
+					     player2=40;
+					   }
+					score = "player1:40+AD player2:" + player2;
 					}
 				}
 			} else {
@@ -41,7 +44,10 @@ public class TennisGame {
 					if (player1 == player2) {
 						player2 = 40 + 1;
 					} else {
-						score = "player1:" + player1 + " player2:40+AD";
+					if(player1>40){
+					   player1=40;
+					}			
+					score = "player1:" + player1 + " player2:40+AD";
 					}
 				}
 			}

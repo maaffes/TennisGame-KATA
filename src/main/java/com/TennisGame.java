@@ -53,7 +53,7 @@ public class TennisGame {
 			if (value == 1) {
 				if (player1 < 6) {
 					player1 += 1;
-				} else if (player1 - player2 <= 1) {
+				} else if (Math.abs(player1 - player2) <= 1) {
 					player1 += 1;
 				}
 
